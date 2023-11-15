@@ -1,0 +1,116 @@
+.flex-container {
+    display: flex;
+}
+.left-bar {
+    float: left;
+    top: 0;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 54, 20);
+}
+.center-bar{
+    background-color:antiquewhite;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    float: left;
+    top: 0;
+    width: 40%;
+}
+.right-bar {
+    float: left;
+    top: 0;
+    width: 30%;
+    background-color: rgb(3, 54, 20);
+}
+h1 {
+    text-align: center;
+    color:#000000
+}
+h2{
+    margin: 0;
+}
+.row {
+    display: flex;
+    align-items:flex-start ; 
+    justify-content: space-between; 
+    padding: 0 20px
+}
+.section-skills{
+   padding: 10px 0 0 0;
+}
+img{
+    width: 200px;
+} 
+.section{
+    padding: 20px 20px
+}
+.text-container {
+    text-align: justify; /* Вирівнювання тексту по ширині */
+    text-justify: inter-word; /* Рівномірний відступ між словами */
+    margin: 0 auto; /* Центрування тексту по горизонталі */
+    max-width: 640px; /* Максимальна ширина контейнера */
+    
+}
+.text-container h2{
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.paragraph{
+    text-indent: 30px; /* Встановлення відступу для першого слова в кожному абзаці */
+}
+p{
+    margin: 0;
+}
+/* Медиа запрос: для экранов с шириной до 1070рх*/
+
+@media (max-width: 1070px){
+    .left-bar, .right-bar {
+        width: 25%;
+    }
+    .center-bar{
+        width: 50%;
+    }
+    img{
+        width: 170px;
+    } 
+    .text-container {
+    max-width: 440px; /* Максимальна ширина контейнера */
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+/* Медиа запрос: для экранов с шириной до 870рх*/
+@media (max-width: 870px){
+    .left-bar, .right-bar {
+        width: 20%;
+    }
+    .center-bar{
+        width: 60%;
+    }
+    img{
+        width: 150px;
+    } 
+    h2{
+        font-size: 18px;
+    }
+    .text-container {
+        max-width: 340px; /* Максимальна ширина контейнера */
+        }
+    .section-contacts, .sextion-skills{
+        padding: 0
+    }  
+    .row {
+    
+    flex-direction: column-reverse; /* Элементы размещаются вертикально */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center;    
+    }
+}
